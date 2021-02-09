@@ -463,15 +463,13 @@ input:invalid {
   .footer a:hover {
     color: rgb(64, 199, 233);
     text-decoration: none;
-    animation: footer-hover 1s;
-    animation-timing-function: ease-in;
+    animation: footer-hover 1s forwards;
   }
 
   .footer span:hover {
     color: rgb(64, 199, 233);
     text-decoration: none;
-    animation: footer-hover 1s;
-    animation-timing-function: ease-in;
+    animation: footer-hover 1s forwards;
     cursor: pointer;
   }
   
