@@ -55,6 +55,14 @@
                     <img src="Assets/200.gif">
                   </div>
             </div>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                  <span role="button" class="close">&times;</span>
+                  <p id="modal-p">You found me!</p>
+                  <p>Here is some more text that relates to the heading above me!</p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/h54NHiDzvsM?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+          </div>
         </div>
 
         <br>
@@ -63,9 +71,11 @@
         <div class="info-section-one">
             <div id="section-one-wrapper">
                 <div id="wrapper-text">
+                  <h1></h1>
+                  <h2></h2>
                     <h4 id="section-one-heading">This is about Batman!</h4>
                     <h3 id="section-one-heading">While Batman is ok, I prefer The Hulk!</h3>
-                    <p>Carl Sagan spoke fluently between biology and geology and astrophysics and physics. If you move fluently across those boundaries, you realize that science is everywhere; science is not something you can step around or sweep under the rug.</p>
+                    <p>Carl Sagan spoke fluently between biology and geology and astrophysics and physics. If you move fluently across those boundaries, you realize that science is everywhere; science is not something you can step around or sweep under the rug. Should you want more information, you can email at something.superhero.hulk@thisisaviolation.com or 1-800-VIO-LATION.</p>
 
                     <p>If you think of feelings you have when you are awed by something - for example, knowing that elements in your body trace to exploded stars - I call that a spiritual reaction, speaking of awe and majesty, where words fail you.</p>
                     <ul>
@@ -81,7 +91,6 @@
                 <div class="section-one-photo">
                     <div tabindex="0">
                         <div tabindex="0">
-                            <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson">
                             <div tabindex="0">
                                 <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson">
                                 <img id="tyson-photo" src="Assets/degrassetyson.jpg">
@@ -102,7 +111,7 @@
 
                             The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.</p>
     
-                        <p>Hero can be anyone. Even a man knowing something as simple and reassuring as putting a coat around a young boy shoulders to let him know the world hadn't ended.</p>
+                        <p>Hero can be anyone. Even a man knowing something as simple and reassuring as putting a coat around a young boy shoulders to let him know the world hadn't ended. If you want to contact Batman you can reach him at batman.batman@batman.com or 1-800-BAT-MAN1</p>
                         <p>Books that Batman has written</p>
                         <ul>
                             
@@ -365,20 +374,20 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="input-block">
-                        Last Name
+                        Last Name *
                         <input placeholder="is a better"type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="input-block">
                         Email
-                        <input placeholder="superhero than thor" type="text" class="form-control">
+                        <input aria-required="true" placeholder="superhero than thor" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
                         <div class="input-block">
                         Message Subject
-                        <input placeholder="placeholder text is insufficient, hint hint" type="text" class="form-control">
+                        <input required="true" placeholder="placeholder text is insufficient, hint hint" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
@@ -403,9 +412,9 @@
         </div>       
         
         <div class="footer">
-            <img alt="important information lives in this" src="./Assets/text.png">
+            <img alt="important information lives in this" src="/Assets/text.png">
             <ul>
-                <li><span role="link" tabindex="0">This is a link</span></li>
+                <li><span role="link" tabindex="0" href="#">This is a link</span></li>
                 <li><a href="#">This is another link</li></a>
                 <li><a href="#">More links more links</li></a>
             </ul>
