@@ -1,15 +1,18 @@
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2")
 var btn = document.getElementById("banner-btn");
 var btnTwo = document.getElementById("banner-btn-two");
 var btnThree = document.getElementById("banner-btn-three");
 var span = document.getElementsByClassName("close")[0];
+var imgChange = document.getElementById("tyson-photo");
 
 var close = function(){
   modal.style.display = "none";
+  modal2.style.display= "none"
 }
 
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal2.style.display = "block";
 
 console.log("clicked")
   }
@@ -30,6 +33,18 @@ console.log("clicked")
   }
 
 'use strict';
+
+imgChange.onmouseover = function() {
+  let currentImg = imgChange.getAttribute("src")
+  if (currentImg === "Assets/degrassetyson.jpg") {
+    imgChange.setAttribute("src", "Assets/neildegrassetyson.jpg")
+  }
+  else if (currentImg === "Assets/neildegrassetyson.jpg") {
+    imgChange.setAttribute("src", "Assets/degrassetyson.jpg")
+  }
+  
+}
+
 
 Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(function (accordion) {
 
