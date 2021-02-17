@@ -19,8 +19,8 @@
         <div class="navigation-bar" role="navigation">
             <div class="nav-wrapper">
                 <div class="links">
-                <a aria-label="deceptive label" class="nav-link" href="/aboutus">About Us!</a>
-                <a aria-label="sneaky sneaky" class="nav-link" href="/locations">Locations!</a>
+                <a aria-label="deceptive label" class="nav-link-outline" href="/aboutus">About Us!</a>
+                <a aria-label="sneaky sneaky" class="nav-link-outline" href="/locations">Locations!</a>
                 <img class="nav-link" id="logo" src="./Assets/logo-social.png">
                 <a class="nav-link" href="/goodnav">This is a good nav!</a>
                 <button class="dropbtn nav-link">Dropdown
@@ -42,10 +42,10 @@
                 <p id="span-p">I'm a link</p>
             </span>
             <a id="banner-btn-two" role="button">
-              <p id="span-p">I'm a link</p>
+              <p id="span-p">Je suis un lien</p>
           </a>
           <span id="banner-btn-three" role="button">
-            <p id="span-p">I'm a link</p>
+            <p id="span-p">Jag är en länk</p>
         </span>
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -69,11 +69,11 @@
         <br>
 
         <div class="info-section-one">
-            <div id="section-one-wrapper">
+            <div id="section-one-wrapper" tabindex="2">
                 <div id="wrapper-text">
                   <h1></h1>
                   <h2></h2>
-                    <h4 id="section-one-heading">This is about Batman!</h4>
+                    <h4 id="section-one-heading" tabindex="3">This is about Batman!</h4>
                     <h3 id="section-one-heading">While Batman is ok, I prefer The Hulk!</h3>
                     <p>Carl Sagan spoke fluently between biology and geology and astrophysics and physics. If you move fluently across those boundaries, you realize that science is everywhere; science is not something you can step around or sweep under the rug. Should you want more information, you can email at something.superhero.hulk@thisisaviolation.com or 1-800-VIO-LATION.</p>
 
@@ -103,6 +103,9 @@
         </div>
         <br>
         <br>
+        <div class="sneaky-text">
+          <p>Is this text hidden? You bet it's hidden. But is it hidden to everyone? Nope! That doesn't seem right does it.</p>
+        </div>
             <div class="info-section-two">
                 <div id="section-two-wrapper">
                     <div id="two-wrapper-text">
@@ -112,7 +115,7 @@
                             The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.</p>
     
                         <p>Hero can be anyone. Even a man knowing something as simple and reassuring as putting a coat around a young boy shoulders to let him know the world hadn't ended. If you want to contact Batman you can reach him at batman.batman@batman.com or 1-800-BAT-MAN1</p>
-                        <p>Books that Batman has written</p>
+                        <p tabindex="1">Books that Batman has written</p>
                         <ul>
                             
                             <div class="book-list">
@@ -129,7 +132,7 @@
                             <div tabindex="0">
                                 <div tabindex="0">
                                     <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson">
-                                    <img alt="is this neil degrass tyson?" title="is this neil degrasse tyson?" id="tyson-photo-two" src="./Assets/batman.gif">
+                                    <img alt="is this neil degrass tyson?" title="is this neil degrasse tyson?" id="tyson-photo-two" src="Assets/batman.gif">
                                     </a>
                                 </div>
                             </div>
@@ -142,23 +145,9 @@
             <br>
 
                 <div class="demo-block">
-                    <!-- Accordion Configuration Options
-                    
-                    data-allow-toggle
-                      Allow for each toggle to both open and close its section. Makes it possible for all sections to be closed. Assumes only one section may be open.
-                    
-                    data-allow-multiple
-                      Allow for multiple accordion sections to be expanded at the same time. Assumes data-allow-toggle otherwise the toggle on open sections would be disabled.
-                    __________
-                    
-                    Ex:
-                      <div id="accordionGroup" class="Accordion" data-allow-multiple>
-                    
-                      <div id="accordionGroup" class="Accordion" data-allow-toggle>
-                    -->
                     <div id="accordionGroup" class="Accordion">
                       <h3>
-                        <button
+                        <button tabindex="5"
                                 class="Accordion-trigger"
                                 aria-controls="sect1"
                                 id="accordion1id">
@@ -387,7 +376,7 @@
                     <div class="col-sm-12">
                         <div class="input-block">
                         Message Subject
-                        <input required="true" placeholder="placeholder text is insufficient, hint hint" type="text" class="form-control">
+                        <input oninvalid="this.setCustomValidity('What kind of error message is this? Ridiculous.')" required="true" placeholder="placeholder text is insufficient, hint hint" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-sm-12">
@@ -410,12 +399,12 @@
                 </div>
             </div>
         </div>       
-        
+  
         <div class="footer">
             <img alt="important information lives in this" src="/Assets/text.png">
             <ul>
                 <li><span role="link" tabindex="0" href="#">This is a link</span></li>
-                <li><a href="#">This is another link</li></a>
+                <li><a href="jeherringer.github.io/broken-link-haha">This is another link</li></a>
                 <li><a href="#">More links more links</li></a>
             </ul>
             <a href="twitter" class="fa fa-facebook"></a>
@@ -424,7 +413,9 @@
                 
             
         </div>
-
+        <div id="first-scroll-section" class="scroll-wrapper">
+          <div class="scroll-content"></div>
+        </div>
         <div tabindex="0" id="you-found-this-duplicate-too">
           <a href="https://jeherringer.github.io"></a>
         </div>
